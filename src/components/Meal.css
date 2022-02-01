@@ -1,0 +1,257 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color:lightcoral
+}
+.heading h1{
+    color:rgb(53, 23, 23);
+    font-size: 40px;
+    font-weight:800;
+    letter-spacing: 1px;
+    padding-top:2rem;
+    text-align: center;
+    text-shadow: 1px 2px rgba(50,50,70,0.7);
+}
+nav{
+    background: linear-gradient(90deg, rgb(182, 84, 84) 0%, rgb(26, 23, 23) 100%);
+    height: 80px;
+    display: inline;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    font-size: 1.2rem;
+    top: 0;
+    z-index: 999;
+}
+.footer {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+}         
+  
+  
+  .nav-links {
+    color: lightcoral;
+    display: inline;
+    /* flex-flow: row; */
+    text-align: center;   
+    /* align-items:right;   */
+    height: 100%;
+    justify-content: right;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    list-style: none;
+    min-width: 500px;
+    font-style: italic;
+  }
+  
+  .nav-links:hover {
+    
+    transition: all 0.2s ease-out;
+    background-color: #fff;
+    color: #242424;
+    border-radius: 0;
+   
+  }
+
+  .navbar-logo {
+    position:absolute;
+    width: 500px;
+    /* height: 500px; */
+    top:auto;
+    left: 0;
+ 
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+    border-radius: 4px;
+    width: 60%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+  }
+    /* color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+   */
+ /* .nav-links-mobile {
+    display:none;
+  } */
+.heading h4{
+    color:rgb(96, 65, 65);
+    text-align: center;
+}
+.searchBox{
+    text-align: center;
+    margin:3rem;
+   
+}
+.search-bar{
+    width:400px;
+    height:40px;
+    border:none;
+    outline:none;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+    background-color: rgb(167, 57, 57)
+}
+.notSearch{
+    font-size: 15px;
+    color:rgb(117, 57, 57);
+    font-weight:700;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top:50px;
+    width:absolute;
+    background-Image:url("https://thumbs.dreamstime.com/z/greek-food-background-traditional-different-dishes-top-view-close-up-143835881.jpg")
+;  background-position:center;
+background-size: cover;
+
+}
+h2{
+margin-top: 20px;
+font-style: italic;
+color: rgb(20, 9, 9);
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+label{
+
+font-size: 20px;
+font-family: sans-serif;
+color:rgb(22, 8, 8);
+font-style:oblique 
+}
+
+form{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin:25px 85px 75px 100px ;
+    padding:6px
+}  
+textarea{
+   background-color:rgb(235, 171, 171);
+/* height: 100px; */
+}
+input{
+    background-color:rgb(235, 171, 171);
+}
+.btn{
+    margin-top: 25px;
+}
+.container{
+    width:80%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    width:300px;
+    height:400px;
+    margin:1.5rem;
+    background: linear-gradient(to left,rgb(204, 255, 51,0.5),to left,rgb(255, 255, 255,0.9));
+    border-radius: 8px;
+    box-shadow: 0 7px 12px rgb(204, 255, 51,0.5);
+    box-sizing: border-box;
+    overflow: auto;
+    position:relative;
+}
+.card img{
+    width:100%;
+}
+.card .info{
+    color:white;  
+    text-align: center;
+  }
+ 
+  .card .info h2{
+      margin:0;
+      font-weight: 900;
+      margin-top: 15px;
+  }
+  .card .info p{
+    margin: 0;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+.card:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height:0;
+    width:100%;
+    background: linear-gradient(to bottom,rgb(204, 255, 51,0.7),rgb(204, 255, 51,0.9));
+    transition:0.2s All;
+}
+.card:hover:before{
+    height: 100%;  
+   
+}
+.card:hover{
+    background: linear-gradient(to bottom,rgb(204, 255, 51,0.7),rgb(204, 255, 51,0.9));  
+}
+.card .recipe{
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: justify;
+    padding: 0.5rem 1rem;
+    display: none;
+    transition: 0.3s all;
+}
+.card:hover .recipe{
+    display:block;
+}
+.recipe h2{
+    margin-bottom:10px;
+}
+.recipe img{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.recipe p{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.recipe a{   
+    display: block;
+    text-align: center;
+}
+
+
+.home {
+    min-height: 100vh;
+    height: auto;
+    background: #000;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
